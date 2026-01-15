@@ -8,7 +8,7 @@ import pandas as pd
 import pickle
 
 # Load the trained model
-with open('classification_model_20260115_132343.pkl', 'rb') as f:
+with open('classification_model_20260115_135740.pkl', 'rb') as f:
     saved_data = pickle.load(f)
     model = saved_data['model']
     scaler = saved_data['scaler']

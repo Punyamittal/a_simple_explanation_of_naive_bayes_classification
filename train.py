@@ -60,14 +60,14 @@ if 'classification' == 'classification':
 else:
     y_pred = model.predict(X_test_scaled)
     score = r2_score(y_test, y_pred)
-    print(f"R² Score: {score:.3f}")
+    print(f"RÂ² Score: {score:.3f}")
 
 # Save model and scaler
-with open('classification_model_20260115_132343.pkl', 'wb') as f:
+with open('classification_model_20260115_135740.pkl', 'wb') as f:
     pickle.dump({
         'model': model,
         'scaler': scaler,
         'label_encoder': le if 'classification' == 'classification' and 'le' in locals() else None
     }, f)
 
-print(f"Model trained and saved to classification_model_20260115_132343.pkl")
+print(f"Model trained and saved to classification_model_20260115_135740.pkl")
